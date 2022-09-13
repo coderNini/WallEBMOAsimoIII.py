@@ -55,7 +55,7 @@
         self.gopigo3.spin_right()
         sleep(1.2*beat)
         self.gopigo3.stop()
-        sleep(3.65*beat)
+        sleep(4*beat)
         
         #22-24
         self.gopigo3.forward()
@@ -100,7 +100,7 @@
         self.gopigo3.backward()
         sleep(5*beat)
         self.gopigo3.spin_left()
-        sleep(2*beat)
+        sleep(2.5*beat)
         
         #Repeats Begin
         self.gopigo3.drive_cm(5)
@@ -112,7 +112,7 @@
         self.gopigo3.drive_cm(3)
         sleep(0.5*beat)
         self.gopigo3.spin_left()
-        sleep(1.25*beat)
+        sleep(2*beat)
         
         
         self.gopigo3.drive_cm(5)
@@ -121,13 +121,56 @@
         sleep(0.5*beat)
         self.gopigo3.drive_cm(3)
         sleep(0.5*beat)
-       
-        self.gopigo3.spin_left()
+        self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
+        self.gopigo3.spin_left()
+        sleep(2*beat)
+        
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.spin_left()
+        sleep(2*beat)
+        
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(1.25*beat)
+        self.gopigo3.spin_left()
+        sleep(2*beat)
+        
+
         self.gopigo3.stop()
         sleep(0.75*beat)
         self.gopigo3.spin_right()
-        sleep(1.25*beat)
+        sleep(3*beat)
+        self.gopigo3.stop()
+        sleep(0.75*beat)
+        self.gopigo3.forward()
+        sleep(1.5*beat)
+        self.gopigo3.backward()
+        sleep(1.5*beat)
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.spin_left()
+        sleep(1.5*beat)
+        self.gopigo3.spin_right()
+        sleep(1.5*beat)
         
         
         #START TURNING AROUND THE CIRCLE TO END IN OOPPOOSITE POSITIONS OF WHERE WE STARTED
