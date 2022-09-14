@@ -2,7 +2,10 @@
     
     def _gopigo3_command_dance_off(self):
         beat = 60/130
-        self.gopigo3.set_speed(1000)
+        s = 1000
+        
+        self.gopigo3.set_speed(s)
+        
       
         #1-4
         self.gopigo3.spin_left()
@@ -33,12 +36,12 @@
         sleep(0.5*beat)
        
         #12-14
-        self.gopigo3.spin_left()
+        self.gopigo3.spin_right()
         sleep(1.25*beat)
         self.gopigo3.drive_cm(3)
-        sleep(0.35*beat)
+        sleep(0.5*beat)
         self.gopigo3.drive_cm(3)
-        sleep(0.35*beat)
+        sleep(0.5*beat)
         
         #15-21a
         self.gopigo3.spin_left()
@@ -112,7 +115,7 @@
         self.gopigo3.drive_cm(3)
         sleep(0.5*beat)
         self.gopigo3.spin_left()
-        sleep(2*beat)
+        sleep(2.35*beat)
         
         
         self.gopigo3.drive_cm(5)
@@ -124,7 +127,7 @@
         self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
         self.gopigo3.spin_left()
-        sleep(2*beat)
+        sleep(2.35*beat)
         
         
         self.gopigo3.drive_cm(5)
@@ -136,7 +139,7 @@
         self.gopigo3.drive_cm(3)
         sleep(0.5*beat)
         self.gopigo3.spin_left()
-        sleep(2*beat)
+        sleep(2.35*beat)
         
         
         self.gopigo3.drive_cm(5)
@@ -148,7 +151,7 @@
         self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
         self.gopigo3.spin_left()
-        sleep(2*beat)
+        sleep(2.35*beat)
         
 
         self.gopigo3.stop()
@@ -171,6 +174,69 @@
         sleep(1.5*beat)
         self.gopigo3.spin_right()
         sleep(1.5*beat)
+        
+        #While Loop Speed Decrease
+        while s > 500:
+            self.gopigo3.forward()
+            sleep(4*beat)
+            self.gopigo3.steer(10,s)
+            sleep(4*beat)
+            s = s - 100
+            self.gopigo3.forward()
+            sleep(4*beat)
+            self.gopigo3.steer(s,10)
+            sleep(4*beat)
+            s = s - 100
+            
+        
+        #Back to Repeats
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.spin_left()
+        sleep(2.35*beat)
+        
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(1.25*beat)
+        self.gopigo3.spin_left()
+        sleep(2.35*beat)
+        
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.spin_left()
+        sleep(2.35*beat)
+        
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(1.25*beat)
+        self.gopigo3.spin_left()
+        sleep(2.35*beat)
+        self.gopigo3.stop()
         
         
         #START TURNING AROUND THE CIRCLE TO END IN OOPPOOSITE POSITIONS OF WHERE WE STARTED
