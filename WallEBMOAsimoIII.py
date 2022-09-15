@@ -117,7 +117,6 @@
         self.gopigo3.spin_left()
         sleep(2.35*beat)
         
-        
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
         self.gopigo3.drive_cm(3)
@@ -187,8 +186,7 @@
             self.gopigo3.steer(s,10)
             sleep(4*beat)
             s = s - 100
-            
-        
+   
         #Back to Repeats
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
@@ -201,7 +199,6 @@
         self.gopigo3.spin_left()
         sleep(2.35*beat)
         
-        
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
         self.gopigo3.drive_cm(3)
@@ -213,7 +210,6 @@
         self.gopigo3.spin_left()
         sleep(2.35*beat)
         
-        
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
         self.gopigo3.drive_cm(3)
@@ -224,7 +220,6 @@
         sleep(0.5*beat)
         self.gopigo3.spin_left()
         sleep(2.35*beat)
-        
         
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
@@ -237,6 +232,3 @@
         self.gopigo3.spin_left()
         sleep(2.35*beat)
         self.gopigo3.stop()
-        
-        
-        #START TURNING AROUND THE CIRCLE TO END IN OOPPOOSITE POSITIONS OF WHERE WE STARTED
