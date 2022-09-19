@@ -1,11 +1,10 @@
  #BEGIN CODE FOR DANCE OFF
     
-    def _gopigo3_command_dance_off(self):
+     def _gopigo3_command_dance_off(self):
         beat = 60/130
         s = 1000
         
         self.gopigo3.set_speed(s)
-        
       
         #1-4
         self.gopigo3.spin_left()
@@ -103,7 +102,7 @@
         self.gopigo3.backward()
         sleep(5*beat)
         self.gopigo3.spin_left()
-        sleep(2.5*beat)
+        sleep(2*beat)
         
         #Repeats Begin
         self.gopigo3.drive_cm(5)
@@ -126,9 +125,8 @@
         self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
         self.gopigo3.spin_left()
-        sleep(2.35*beat)
-        
-        
+        sleep(2*beat)
+              
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
         self.gopigo3.drive_cm(3)
@@ -139,7 +137,6 @@
         sleep(0.5*beat)
         self.gopigo3.spin_left()
         sleep(2.35*beat)
-        
         
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
@@ -150,9 +147,8 @@
         self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
         self.gopigo3.spin_left()
-        sleep(2.35*beat)
-        
-
+        sleep(2*beat)
+    
         self.gopigo3.stop()
         sleep(0.75*beat)
         self.gopigo3.spin_right()
@@ -176,17 +172,18 @@
         
         #While Loop Speed Decrease
         while s > 500:
-            self.gopigo3.forward()
+            self.gopigo3.backward()
             sleep(4*beat)
             self.gopigo3.steer(10,s)
             sleep(4*beat)
             s = s - 100
-            self.gopigo3.forward()
+            self.gopigo3.backward()
             sleep(4*beat)
             self.gopigo3.steer(s,10)
             sleep(4*beat)
             s = s - 100
-   
+            
+            
         #Back to Repeats
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
@@ -196,7 +193,29 @@
         sleep(0.5*beat)
         self.gopigo3.drive_cm(3)
         sleep(0.5*beat)
-        self.gopigo3.spin_left()
+        self.gopigo3.spin_right()
+        sleep(2.35*beat)
+       
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(1.25*beat)
+        self.gopigo3.spin_right()
+        sleep(2*beat)
+        
+        self.gopigo3.drive_cm(5)
+        sleep(1.35*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.drive_cm(3)
+        sleep(0.5*beat)
+        self.gopigo3.spin_right()
         sleep(2.35*beat)
         
         self.gopigo3.drive_cm(5)
@@ -207,28 +226,6 @@
         sleep(0.5*beat)
         self.gopigo3.drive_cm(3)
         sleep(1.25*beat)
-        self.gopigo3.spin_left()
-        sleep(2.35*beat)
-        
-        self.gopigo3.drive_cm(5)
-        sleep(1.35*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(0.5*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(0.5*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(0.5*beat)
-        self.gopigo3.spin_left()
-        sleep(2.35*beat)
-        
-        self.gopigo3.drive_cm(5)
-        sleep(1.35*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(0.5*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(0.5*beat)
-        self.gopigo3.drive_cm(3)
-        sleep(1.25*beat)
-        self.gopigo3.spin_left()
-        sleep(2.35*beat)
+        self.gopigo3.spin_right()
+        sleep(2*beat)
         self.gopigo3.stop()
