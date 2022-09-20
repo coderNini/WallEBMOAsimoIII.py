@@ -67,11 +67,13 @@
         self.gopigo3.forward()
         sleep(1*beat)
         
-        #25
+        #25-26
         self.gopigo3.spin_right()
         sleep(2.5*beat)
         self.gopigo3.stop()
         sleep(1.5*beat)
+        
+        #27
         self.gopigo3.forward()
         sleep(2*beat)
         self.gopigo3.backward()
@@ -80,6 +82,8 @@
         sleep(2.5*beat)
         self.gopigo3.stop()
         sleep(1.5*beat)
+        
+        #28
         self.gopigo3.backward()
         sleep(2*beat)
         self.gopigo3.forward()
@@ -89,6 +93,7 @@
         self.gopigo3.stop()
         sleep(1.5*beat)
         
+        #29
         self.gopigo3.spin_right()
         sleep(1*beat)
         self.gopigo3.stop()
@@ -101,10 +106,12 @@
         sleep(0.65*beat)
         self.gopigo3.backward()
         sleep(5*beat)
+        
+        #30
         self.gopigo3.spin_left()
         sleep(2*beat)
         
-        #Repeats Begin
+        #31 --> Repeats Begin
         self.gopigo3.drive_cm(5)
         sleep(1.35*beat)
         self.gopigo3.drive_cm(3)
@@ -229,3 +236,5 @@
         self.gopigo3.spin_right()
         sleep(2*beat)
         self.gopigo3.stop()
+
+        
