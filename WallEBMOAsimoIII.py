@@ -236,5 +236,3 @@
         self.gopigo3.spin_right()
         sleep(2*beat)
         self.gopigo3.stop()
-
-        
